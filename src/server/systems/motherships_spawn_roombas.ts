@@ -24,8 +24,8 @@ export function MothershipsSpawnRoombas(world: World): void {
 
 		if (new_lasering.remaining_time <= 0) {
 			world.remove(id, Lasering);
+		} else {
+			world.insert(id, new_lasering);
 		}
-
-		world.insert(id, new_lasering);
 	}
 }
